@@ -1,0 +1,5 @@
+setwd("C:/education/4 Sem/iim banglore conf")
+x<-read.csv("creditcard.csv",header=T)
+library(caret)
+table(x$Class)
+ggplot(x, aes(Class, fill="salmon")) + geom_bar()
